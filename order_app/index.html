@@ -5,45 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order App</title>
 
-    <style>
-
-        /* Declaration Block 
-        selector {
-            property: value
-        }
-        */
-
-        h1 {
-            color: red;
-        }
-
-        button {
-            background-color:#5cb3ed;
-        }
-
-        p {
-            color: green;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-    <h1>Order Food Now</h1>
-    <input type="text" placeholder="Order Food Item">
-    <button>Order</button>
+    <main>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non accusantium corporis. Illum molestiae itaque, magni similique aliquid blanditiis placeat, cupiditate, adipisci ullam laborum earum eveniet doloremque voluptatem aspernatur quas.</p>
+        <section class="menu">
+            <ol>
+                <li>Pizza: $12.50</li>
+                <li>Burger: $10</li>
+                <li>Pasta: $12</li>
+                <li>Cake: $7</li>
+                <li>Ice Cream: $6</li>
+                <li>Pepsi: $1</li>
+                <li>Coke: $2</li>
+                <li>Lemonade: $2</li>
+                <li>Beer: $7</li>
+            </ol>
+        </section>
 
-    <h2></h2>
+        <section class="order">
+            
+            <form id="order-form">
+                <h1>Order Food Now</h1>
+                <input id="item-input" type="text" placeholder="Order Food Item">
+                <button type="submit">Add To Order</button>
+            </form>
+
+            <div>
+                <h2>Your Order</h2>
+                <ul id="order-list">
+                </ul>
+                <h3>Order Summary</h3>
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Tax: <span id="tax">$0.00</span></p>
+                <p>Total: <span id="total">$0.00</span></p>
+            </div>
+
+
+            
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+    
     
 </body>
 </html>
